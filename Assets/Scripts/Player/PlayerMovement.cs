@@ -22,6 +22,7 @@ namespace Player.Movement
 		{
 			if (!data.MovementState)
 			{
+				rigidbody2D.velocity = Vector2.zero;
 				return;
 			}
 

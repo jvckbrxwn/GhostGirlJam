@@ -984,6 +984,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5807638505667161600, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
+      propertyPath: connectedDoor
+      value: 
+      objectReference: {fileID: 1731028946}
+    - target: {fileID: 6592237090775267478, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
+      propertyPath: m_Name
+      value: Right
+      objectReference: {fileID: 0}
     - target: {fileID: 7841962798168862485, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.325512
@@ -1024,11 +1032,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8965778041149572195, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.49
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
+--- !u!114 &1115584059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5807638505667161600, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
+  m_PrefabInstance: {fileID: 1069399040}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2223434d67994297a91a46085f6b4bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1193951830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1199,17 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 3585150313267364957, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
   m_PrefabInstance: {fileID: 4422485246653803911}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1731028946 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4382143590862291368, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
+  m_PrefabInstance: {fileID: 4422485246653803911}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2223434d67994297a91a46085f6b4bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1962098798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +1573,10 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 859297871}
+    - target: {fileID: 4382143590862291368, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
+      propertyPath: connectedDoor
+      value: 
+      objectReference: {fileID: 1115584059}
     - target: {fileID: 5018162299649593442, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
       propertyPath: m_Name
       value: Room
