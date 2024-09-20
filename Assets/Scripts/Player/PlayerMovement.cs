@@ -26,8 +26,8 @@ namespace Player.Movement
 				return;
 			}
 
-			Vector2 moveValue = moveAction.ReadValue<Vector2>();
-			rigidbody2D.velocity = moveValue * speed;
+			Vector3 moveValue = moveAction.ReadValue<Vector2>();
+			rigidbody2D.MovePosition(transform.position + moveValue * (speed * Time.deltaTime));
 		}
 
 		public void SetMovementState(bool state)

@@ -26,9 +26,7 @@ namespace Managers
 		}
 
 		public void Init()
-		{
-			Debug.Log($"Hello, I'm {GetType()}");
-		}
+		{ }
 
 		public void InteractWith(IInteractable component)
 		{
@@ -45,7 +43,7 @@ namespace Managers
 			TranslateTo(door.transform.position);
 			door.Room.ChangeRoom();
 		}
-		
+
 		private void TranslateTo(Vector3 position)
 		{
 			playerMovement.gameObject.transform.position = position;

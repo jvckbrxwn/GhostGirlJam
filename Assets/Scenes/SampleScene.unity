@@ -988,10 +988,6 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 1731028946}
-    - target: {fileID: 6592237090775267478, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
-      propertyPath: m_Name
-      value: Right
-      objectReference: {fileID: 0}
     - target: {fileID: 7841962798168862485, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.325512
@@ -1031,10 +1027,6 @@ PrefabInstance:
     - target: {fileID: 7841962798168862485, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8965778041149572195, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.49
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

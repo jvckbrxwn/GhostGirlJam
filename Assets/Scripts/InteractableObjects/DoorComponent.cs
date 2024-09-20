@@ -68,7 +68,6 @@ namespace InteractableObjects
 		{
 			if (other.CompareTag(playerManager.PlayerTag))
 			{
-				Debug.Log("Hello?");
 				canInteract = true;
 			}
 		}

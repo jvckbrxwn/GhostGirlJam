@@ -12,7 +12,7 @@ namespace Managers
 	public class CameraManager : MonoBehaviour, IManager
 	{
 		[SerializeField] private CinemachineConfiner cinemachineConfiner;
-		
+
 		[Space, SerializeField] private Image fadeImage;
 		[SerializeField] private float fadeDuration;
 
@@ -27,9 +27,7 @@ namespace Managers
 		}
 
 		public void Init()
-		{
-			Debug.Log($"Hello, I'm {GetType()}");
-		}
+		{ }
 
 		public async UniTask Fade(float to)
 		{
