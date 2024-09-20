@@ -14,6 +14,9 @@ namespace InteractableObjects
 		private RoomComponent roomComponent;
 		private PlayerManager playerManager;
 		private TransitionManager transitionManager;
+		private TooltipManager tooltipManager;
+		private SpriteRenderer spriteRenderer;
+
 		private bool canInteract = false;
 
 		public RoomComponent Room => roomComponent;
@@ -30,10 +33,16 @@ namespace InteractableObjects
 		}
 #endif
 
+		private void Awake()
+		{
+			spriteRenderer = GetComponent<SpriteRenderer>();
+		}
+		
 		private void Start()
 		{
 			playerManager = ServiceManager.Instance.GetManager<PlayerManager>();
 			transitionManager = ServiceManager.Instance.GetManager<TransitionManager>();
+			tooltipManager = ServiceManager.Instance.GetManager<TooltipManager>();
 
 			transitionManager.BeforeInteract += OnBeforeInteract;
 			transitionManager.AfterInteract += OnAfterInteract;
@@ -68,6 +77,7 @@ namespace InteractableObjects
 			if (other.CompareTag(playerManager.PlayerTag))
 			{
 				canInteract = true;
+				tooltipManager.ShowUseTooltip(transform, other.transform, spriteRenderer.bounds.size.magnitude / 2f);
 			}
 		}
 
@@ -76,6 +86,7 @@ namespace InteractableObjects
 			if (other.CompareTag(playerManager.PlayerTag))
 			{
 				canInteract = false;
+				tooltipManager.HideUseTooltip();
 			}
 		}
 
