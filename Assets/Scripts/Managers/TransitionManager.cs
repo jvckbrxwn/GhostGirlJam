@@ -27,7 +27,6 @@ namespace Managers
 
 		public void Init()
 		{
-			Debug.Log($"Hello, I'm {GetType()}");
 			cameraManager = ServiceManager.Instance.GetManager<CameraManager>();
 			playerManager = ServiceManager.Instance.GetManager<PlayerManager>();
 		}

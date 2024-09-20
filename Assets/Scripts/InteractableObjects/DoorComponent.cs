@@ -1,4 +1,3 @@
-using System;
 using Cysharp.Threading.Tasks;
 using InteractableObjects.Base;
 using Managers;
@@ -68,7 +67,6 @@ namespace InteractableObjects
 		{
 			if (other.CompareTag(playerManager.PlayerTag))
 			{
-				Debug.Log("Hello?");
 				canInteract = true;
 			}
 		}
