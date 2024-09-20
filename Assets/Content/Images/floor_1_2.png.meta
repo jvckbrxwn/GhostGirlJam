@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9c3edf19df4f048e5b8a68f544fe151e
+guid: 2ff8e87f377391a4d813dcea6b87b549
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6057650642536232081
-    second: waldo-puzzles-where-s-wally-wallpaper-f9e088adc1da3ddbb6a7782f30a1765d_0
+      213: 6304594554927629038
+    second: floor_1_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,37 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: waldo-puzzles-where-s-wally-wallpaper-f9e088adc1da3ddbb6a7782f30a1765d_0
+      name: floor_1_2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -140,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6b063ed5d6eeeba0800000000000000
-      internalID: -6057650642536232081
+      spriteID: ee2c253385b6e7750800000000000000
+      internalID: 6304594554927629038
       vertices: []
       indices: 
       edges: []
@@ -156,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      waldo-puzzles-where-s-wally-wallpaper-f9e088adc1da3ddbb6a7782f30a1765d_0: -6057650642536232081
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
