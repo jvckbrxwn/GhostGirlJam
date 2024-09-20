@@ -1,4 +1,3 @@
-using System;
 using Cysharp.Threading.Tasks;
 using InteractableObjects.Base;
 using Managers;
