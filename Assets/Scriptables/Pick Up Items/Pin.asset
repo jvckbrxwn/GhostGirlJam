@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e05aafea0dee4c678094e907d90d769e, type: 3}
-  m_Name: Chokolade
+  m_Name: Pin
   m_EditorClassIdentifier: 
-  name: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043A\u0430"
+  name: "\u0413\u043E\u043B\u043A\u0430"
   sprite: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2750306318543463252}
   - component: {fileID: 4826920689716713765}
   m_Layer: 0
-  m_Name: Chokolade
+  m_Name: Pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,8 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a99e84aa2e450ca40993d9d2bc5b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
-  pickUpItemData: {fileID: 11400000, guid: 89bd87c7e71e9434f98f2643cd118f05, type: 2}
+  type: 9
+  pickUpItemData: {fileID: 11400000, guid: c94073e3b88583a42825d4ba265af3c7, type: 2}
 --- !u!61 &4826920689716713765
 BoxCollider2D:
   m_ObjectHideFlags: 0
