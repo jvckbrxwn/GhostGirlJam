@@ -20,7 +20,8 @@ namespace Objects.Room.PickUpObjects
 		Pin, //голка
 		Thread, //нитка
 		Button, //ґудзик
-		Eggs, //яйця
+		Eggs, //яйця,
+		MeasureCup, //мірний стаканчик
 	}
 
 	[RequireComponent(typeof(SpriteRenderer))]

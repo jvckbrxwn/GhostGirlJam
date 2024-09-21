@@ -10,7 +10,13 @@ namespace Objects.Room.NPC
 	public class NPCController : BaseInteractableComponent
 	{
 		[SerializeField] private SkeletonAnimation skeletonAnimation;
+		
+		[Header("Items that we have to give to the ghost")]
 		[SerializeField] private List<PickUpType> pickUpItems;
+
+		[Header("Items that ghost give us after quest compition")]
+		[SerializeField] private List<PickUpType> itemsToGive;
+		
 		[field: SerializeField] public bool FinishedQuest { get; private set; } = false;
 
 		public override void Interact()
