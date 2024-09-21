@@ -35,7 +35,7 @@ namespace Managers
 		public void ShowItemTooltip(Transform transform, List<Sprite> sprites)
 		{
 			var p = actualCanvas.WorldToCanvasPosition(transform.position);
-			p.y -= p.y / 2;
+			p.y -= p.y / 4;
 			itemsTooltip.SetSprites(sprites);
 			itemsTooltip.gameObject.SetActive(true);
 			itemsTooltip.RectTransform.DOAnchorPos(p, duration);
@@ -44,7 +44,7 @@ namespace Managers
 		public void ShowItemTooltip(Transform transform, string text)
 		{
 			var p = actualCanvas.WorldToCanvasPosition(transform.position);
-			p.y -= p.y / 2;
+			p.y -= p.y / 4;
 			itemsTooltip.SetText(text);
 			itemsTooltip.gameObject.SetActive(true);
 			itemsTooltip.RectTransform.DOAnchorPos(p, duration);
@@ -53,7 +53,7 @@ namespace Managers
 		public void ShowHeartTooltip(Transform transform)
 		{
 			var p = actualCanvas.WorldToCanvasPosition(transform.position);
-			p.y -= p.y / 2;
+			p.y -= p.y / 4;
 			heartTooltip.gameObject.SetActive(true);
 			heartTooltip.DOAnchorPos(p, duration);
 		}

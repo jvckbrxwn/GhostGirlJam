@@ -138,3 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   pickUpItemData: {fileID: 11400000, guid: 89bd87c7e71e9434f98f2643cd118f05, type: 2}
+  requiredItems: 01000000

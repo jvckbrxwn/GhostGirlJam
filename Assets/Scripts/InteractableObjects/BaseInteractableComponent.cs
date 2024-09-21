@@ -19,7 +19,7 @@ namespace InteractableObjects.Base
 			inventoryManager = ServiceManager.Instance.GetManager<InventoryManager>();
 		}
 
-		private void Update()
+		protected virtual void Update()
 		{
 			if (canInteract && Input.GetKeyDown(KeyCode.E))
 			{

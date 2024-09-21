@@ -17,13 +17,18 @@ namespace Player
 		[SerializeField] private int ghostStateDurationInSeconds = 3;
 		[SerializeField] private int ghostStateCooldownInSeconds = 10;
 
+		public event Action<PlayerStateType> PlayerStateChanged;
+		
 		public PlayerStateType CurrentState { get; private set; }
 		public bool CooldownIsActive { get; private set; } = false;
+
+		public PlayerVisualController VisualController => playerVisualController;
 
 		public async UniTask ChangeState(PlayerStateType type)
 		{
 			CurrentState = type;
-			playerVisualController.ChangeState(type);
+			VisualController.ChangeState(type);
+			PlayerStateChanged?.Invoke(type);
 			switch (type)
 			{
 				case PlayerStateType.Girl:

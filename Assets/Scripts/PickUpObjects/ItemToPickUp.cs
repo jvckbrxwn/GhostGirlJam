@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using InteractableObjects.Base;
 using Managers;
 using ServiceLocator;
@@ -30,6 +32,8 @@ namespace Objects.Room.PickUpObjects
 		[SerializeField] private PickUpType type;
 		[SerializeField] private PickUpItemData pickUpItemData;
 
+		[SerializeField] private List<PickUpType> requiredItems;
+
 		private TooltipManager tooltipManager;
 		private InventoryManager inventoryManager;
 		private SpriteRenderer spriteRenderer;
@@ -61,6 +65,12 @@ namespace Objects.Room.PickUpObjects
 
 		public void PickUp()
 		{
+			if (!requiredItems.All(item => inventoryManager.HasItem(item)))
+			{
+				tooltipManager.ShowItemTooltip(transform, "I can not to pick up it yet");
+				return;
+			}
+			
 			inventoryManager.AddItem(type, MemberwiseClone() as IPickupable);
 			//for now, it will be destroyable, I think here should be a bug :))
 			Destroy(gameObject);
@@ -86,6 +96,7 @@ namespace Objects.Room.PickUpObjects
 			{
 				canInteract = false;
 				tooltipManager.HideUseTooltip();
+				tooltipManager.HideItemsTooltip();
 			}
 		}
 	}

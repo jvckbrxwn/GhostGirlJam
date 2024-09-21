@@ -9,8 +9,14 @@ using UnityEngine;
 
 namespace Objects.Room.NPC
 {
+	public enum NPCType
+	{
+		Maid, Cook, LittleGirl, Butler
+	}
+
 	public class NPCController : BaseInteractableComponent
 	{
+		[SerializeField] private NPCType type;
 		[SerializeField] private SkeletonAnimation skeletonAnimation;
 
 		[Header("Items that we have to give to the ghost")]
@@ -19,14 +25,34 @@ namespace Objects.Room.NPC
 		[Header("Items that ghost give us after quest completion")]
 		[SerializeField] private List<PickUpType> itemsToGive;
 
-		[field: SerializeField] public bool FinishedQuest { get; private set; } = false;
-
 		private DummyDatabaseManager dummyDatabaseManager;
+
+		[field: SerializeField] public bool FinishedQuest { get; private set; } = false;
+		public NPCType Type => type;
 
 		protected override void Start()
 		{
 			base.Start();
 			dummyDatabaseManager = ServiceManager.Instance.GetManager<DummyDatabaseManager>();
+			skeletonAnimation.AnimationState.SetAnimation(0, "animation", true);
+		}
+
+		protected override void Update()
+		{
+			base.Update();
+			FlipToPlayerPosition();
+		}
+
+		private void FlipToPlayerPosition()
+		{
+			if (skeletonAnimation is null)
+			{
+				return;
+			}
+
+			Vector3 forward = transform.TransformDirection(Vector3.right);
+			Vector3 toOther = Vector3.Normalize(playerManager.Movement.transform.position - transform.position);
+			skeletonAnimation.Skeleton.FlipX = Vector3.Dot(forward, toOther) < 0;
 		}
 
 		public override void Interact()
@@ -56,7 +82,7 @@ namespace Objects.Room.NPC
 				FinishedQuest = true;
 				Debug.Log("Quest was finished");
 				Debug.Log("Show tooltip with love");
-				
+
 				tooltipManager.ShowHeartTooltip(transform);
 
 				foreach (PickUpType type in itemsToGive)

@@ -338,6 +338,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4027743131709124329, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: requireItemsToOpen.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027743131709124329, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: 'requireItemsToOpen.Array.data[0]'
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4323983194198194303, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
       propertyPath: m_Name
       value: Door_r5b

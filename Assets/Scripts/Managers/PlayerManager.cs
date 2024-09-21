@@ -1,3 +1,4 @@
+using System;
 using Cysharp.Threading.Tasks;
 using InteractableObjects;
 using InteractableObjects.Base;
@@ -15,10 +16,14 @@ namespace Managers
 		[SerializeField] private PlayerData playerData;
 		[SerializeField] private PlayerMovement playerMovement;
 		[SerializeField] private PlayerStatesController playerStatesController;
-
+		
 		private InputAction moveAction;
 
 		public string PlayerTag => playerData.Tag;
+		public PlayerStateType CurrentState => playerStatesController.CurrentState;
+		public PlayerStatesController StatesController => playerStatesController;
+		public PlayerMovement Movement => playerMovement;
+
 
 		private void Awake()
 		{
@@ -59,11 +64,11 @@ namespace Managers
 			door.Room.ChangeRoom();
 		}
 
-		public async UniTask ChangeState(PlayerStateType type)
+		private async UniTask ChangeState(PlayerStateType type)
 		{
 			await playerStatesController.ChangeState(type);
 		}
-
+		
 		private void TranslateTo(Vector3 position)
 		{
 			playerMovement.gameObject.transform.position = position;
