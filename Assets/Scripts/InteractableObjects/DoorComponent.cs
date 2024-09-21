@@ -23,7 +23,6 @@ namespace InteractableObjects
 		private SpriteRenderer spriteRenderer;
 
 		private bool canInteract = false;
-		private bool fullyOpen = true;
 
 		public RoomComponent Room => roomComponent;
 
@@ -78,7 +77,6 @@ namespace InteractableObjects
 			}
 
 			transitionManager.MoveTo(connectedDoor).Forget();
-			fullyOpen = true;
 		}
 
 		public void SetRoomComponent(RoomComponent room)
