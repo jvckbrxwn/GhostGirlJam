@@ -46,6 +46,8 @@ namespace Objects.Room.PickUpObjects
 			tooltipManager = ServiceManager.Instance.GetManager<TooltipManager>();
 			inventoryManager = ServiceManager.Instance.GetManager<InventoryManager>();
 			playerTag = ServiceManager.Instance.GetManager<PlayerManager>().PlayerTag;
+
+			spriteRenderer.sprite = pickUpItemData.Sprite;
 		}
 
 		private void Update()
