@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using InteractableObjects.Base;
 using Managers;
 using ServiceLocator;
@@ -36,6 +37,7 @@ namespace Objects.Room.PickUpObjects
 
 		private TooltipManager tooltipManager;
 		private InventoryManager inventoryManager;
+		private DummyDatabaseManager dummyDatabaseManager;
 		private SpriteRenderer spriteRenderer;
 
 		private string playerTag;
@@ -50,6 +52,7 @@ namespace Objects.Room.PickUpObjects
 		{
 			tooltipManager = ServiceManager.Instance.GetManager<TooltipManager>();
 			inventoryManager = ServiceManager.Instance.GetManager<InventoryManager>();
+			dummyDatabaseManager = ServiceManager.Instance.GetManager<DummyDatabaseManager>();
 			playerTag = ServiceManager.Instance.GetManager<PlayerManager>().PlayerTag;
 
 			spriteRenderer.sprite = pickUpItemData.Sprite;
@@ -67,10 +70,12 @@ namespace Objects.Room.PickUpObjects
 		{
 			if (!requiredItems.All(item => inventoryManager.HasItem(item)))
 			{
-				tooltipManager.ShowItemTooltip(transform, "I can not to pick up it yet");
+				StringBuilder s = new();
+				s.Append(dummyDatabaseManager.GetItemData(type).Data.Hint);
+				tooltipManager.ShowItemTooltip(transform, s.ToString());
 				return;
 			}
-			
+
 			inventoryManager.AddItem(type, MemberwiseClone() as IPickupable);
 			//for now, it will be destroyable, I think here should be a bug :))
 			Destroy(gameObject);

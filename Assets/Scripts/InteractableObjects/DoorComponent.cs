@@ -14,6 +14,7 @@ namespace InteractableObjects
 	{
 		[SerializeField] private DoorComponent connectedDoor;
 		[SerializeField] private List<PickUpType> requireItemsToOpen;
+		[SerializeField] private string hintMessage;
 
 		private RoomComponent roomComponent;
 		private PlayerManager playerManager;
@@ -67,6 +68,7 @@ namespace InteractableObjects
 			if (!requireItemsToOpen.All(item => inventoryManager.HasItem(item)))
 			{
 				Debug.Log("Show tooltip that door is closed");
+				tooltipManager.ShowItemTooltip(transform, hintMessage);
 				return;
 			}
 
@@ -89,7 +91,10 @@ namespace InteractableObjects
 			if (other.CompareTag(playerManager.PlayerTag))
 			{
 				canInteract = true;
-				tooltipManager.ShowUseTooltip(transform, other.transform, spriteRenderer.bounds.size.magnitude / 2f);
+				if (connectedDoor is not null)
+				{
+					tooltipManager.ShowUseTooltip(transform, other.transform, spriteRenderer.bounds.size.magnitude / 2f);
+				}
 			}
 		}
 
@@ -99,6 +104,7 @@ namespace InteractableObjects
 			{
 				canInteract = false;
 				tooltipManager.HideUseTooltip();
+				tooltipManager.HideItemsTooltip();
 			}
 		}
 

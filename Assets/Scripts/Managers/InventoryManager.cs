@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using InteractableObjects.Base;
+using Objects.Room.HiddenObjects;
 using Objects.Room.PickUpObjects;
 using ServiceLocator;
 using ServiceLocator.Base;
@@ -15,6 +16,9 @@ namespace Managers
 		public event Action<IPickupable> ItemUsed;
 
 		private Dictionary<PickUpType, IPickupable> pickupables = new();
+		private Dictionary<int, string> password = new();
+
+		public Dictionary<PickUpType, IPickupable> Pickupables => pickupables;
 
 		private void Awake()
 		{
@@ -39,6 +43,17 @@ namespace Managers
 		public bool HasItem(PickUpType type)
 		{
 			return pickupables.ContainsKey(type);
+		}
+
+		public void AddPasswordPart(int key, string value)
+		{
+			password.TryAdd(key, value);
+		}
+
+		public bool IsPasswordComplete()
+		{
+			HiddenObjectController[] count = FindObjectsByType<HiddenObjectController>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+			return password.Count == count.Length;
 		}
 	}
 }

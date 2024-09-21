@@ -7,8 +7,10 @@ namespace PickUpObjects.Scriptables
 	{
 		[SerializeField] private new string name;
 		[SerializeField] private Sprite sprite;
+		[SerializeField] private string hint;
 
 		public string Name => name;
 		public Sprite Sprite => sprite;
+		public string Hint => hint;
 	}
 }

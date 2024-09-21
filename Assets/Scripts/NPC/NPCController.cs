@@ -3,6 +3,7 @@ using System.Linq;
 using InteractableObjects.Base;
 using Managers;
 using Objects.Room.PickUpObjects;
+using Player;
 using ServiceLocator;
 using Spine.Unity;
 using UnityEngine;
@@ -34,7 +35,7 @@ namespace Objects.Room.NPC
 		{
 			base.Start();
 			dummyDatabaseManager = ServiceManager.Instance.GetManager<DummyDatabaseManager>();
-			skeletonAnimation.AnimationState.SetAnimation(0, "animation", true);
+			skeletonAnimation?.AnimationState.SetAnimation(0, "idle", true);
 		}
 
 		protected override void Update()
@@ -64,6 +65,12 @@ namespace Objects.Room.NPC
 				return;
 			}
 
+			if (playerManager.StatesController.CurrentState == PlayerStateType.Girl)
+			{
+				tooltipManager.ShowItemTooltip(transform, "Привид відмовляється говорити з вами у людській подобі");
+				return;
+			}
+
 			bool itemsIsPresent = pickUpItems.All(item => inventoryManager.HasItem(item));
 
 			if (!itemsIsPresent)
@@ -80,10 +87,11 @@ namespace Objects.Room.NPC
 				}
 
 				FinishedQuest = true;
-				Debug.Log("Quest was finished");
-				Debug.Log("Show tooltip with love");
-
 				tooltipManager.ShowHeartTooltip(transform);
+				if (type != NPCType.Cook)
+				{
+					skeletonAnimation?.AnimationState.SetAnimation(0, "idle_2", true);
+				}
 
 				foreach (PickUpType type in itemsToGive)
 				{
