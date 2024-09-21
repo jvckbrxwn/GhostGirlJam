@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      measuring_cup-removebg-preview_0: -2860855866261180225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

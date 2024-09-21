@@ -154,7 +154,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      capboard-removebg-preview_0: -2588000044596184415
+      capboard-removebg-preview_1: 6138779062152085028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
