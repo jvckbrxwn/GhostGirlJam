@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Cookie
   m_EditorClassIdentifier: 
   name: "\u041F\u0435\u0447\u0438\u0432\u043E"
-  sprite: {fileID: 0}
+  sprite: {fileID: 5541253663642590004, guid: 2ccf696e9c32d564f9493c61bb3690de, type: 3}

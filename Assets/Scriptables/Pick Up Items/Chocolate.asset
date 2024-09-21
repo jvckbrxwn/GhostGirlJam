@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chocolate
   m_EditorClassIdentifier: 
   name: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043A\u0430"
-  sprite: {fileID: 0}
+  sprite: {fileID: -5209720356119618007, guid: d3d7dba64e82b4a4d9aa5a2fea4ecf5a, type: 3}

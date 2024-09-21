@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Thread
   m_EditorClassIdentifier: 
   name: "\u041D\u0438\u0442\u043A\u0430"
-  sprite: {fileID: 0}
+  sprite: {fileID: -495667834821311767, guid: 7c1cb523aaf800a4596cf07b32e7fb43, type: 3}

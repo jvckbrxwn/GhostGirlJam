@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Flour
   m_EditorClassIdentifier: 
   name: "\u0411\u043E\u0440\u043E\u0448\u043D\u043E"
-  sprite: {fileID: 0}
+  sprite: {fileID: 9132784678072903462, guid: 14829b8680852314ba17721b53761895, type: 3}

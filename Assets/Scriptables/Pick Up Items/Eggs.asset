@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Eggs
   m_EditorClassIdentifier: 
   name: "\u042F\u0439\u0446\u044F"
-  sprite: {fileID: 0}
+  sprite: {fileID: -7733103908128983729, guid: 64b026ca57ee35845b53b0346e617bd8, type: 3}
