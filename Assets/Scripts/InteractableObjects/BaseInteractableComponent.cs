@@ -12,7 +12,7 @@ namespace InteractableObjects.Base
 
 		protected bool canInteract = false;
 
-		protected void Start()
+		protected virtual void Start()
 		{
 			playerManager = ServiceManager.Instance.GetManager<PlayerManager>();
 			tooltipManager = ServiceManager.Instance.GetManager<TooltipManager>();
@@ -47,6 +47,7 @@ namespace InteractableObjects.Base
 				canInteract = false;
 				tooltipManager.HideUseTooltip();
 				tooltipManager.HideItemsTooltip();
+				tooltipManager.HideHeartTooltip();
 			}
 		}
 	}

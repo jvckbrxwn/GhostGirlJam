@@ -1,8 +1,8 @@
 using InteractableObjects.Base;
 using Managers;
-using PickUpObjects.Scriptables;
 using ServiceLocator;
 using UnityEngine;
+using PickUpItemData = PickUpObjects.Scriptables.PickUpItemData;
 
 namespace Objects.Room.PickUpObjects
 {
