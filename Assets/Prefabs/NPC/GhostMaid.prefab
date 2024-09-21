@@ -137,5 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skeletonAnimation: {fileID: 0}
-  pickUpItems: 000000000100000002000000
+  pickUpItems: 090000000a0000000b000000
+  itemsToGive: 01000000
   <FinishedQuest>k__BackingField: 0
