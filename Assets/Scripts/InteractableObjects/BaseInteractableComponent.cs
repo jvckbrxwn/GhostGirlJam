@@ -46,6 +46,7 @@ namespace InteractableObjects.Base
 			{
 				canInteract = false;
 				tooltipManager.HideUseTooltip();
+				tooltipManager.HideItemsTooltip();
 			}
 		}
 	}

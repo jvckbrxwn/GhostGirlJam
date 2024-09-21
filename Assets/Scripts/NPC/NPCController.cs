@@ -32,6 +32,7 @@ namespace Objects.Room.NPC
 			if (!itemsIsPresent)
 			{
 				Debug.Log("Show tooltip with items that npc need");
+				tooltipManager.ShowItemTooltip(transform, new List<Sprite>());
 			}
 			else
 			{

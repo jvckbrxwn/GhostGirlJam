@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using ServiceLocator;
 using ServiceLocator.Base;
 using UnityEngine;
@@ -7,6 +8,7 @@ namespace Managers
 	public class TooltipManager : MonoBehaviour, IManager
 	{
 		[SerializeField] private GameObject useTooltip;
+		[SerializeField] private GameObject itemsTooltip;
 
 		private void Awake()
 		{
@@ -23,9 +25,24 @@ namespace Managers
 			useTooltip.SetActive(true);
 		}
 
+		public void ShowItemTooltip(Transform transform, List<Sprite> sprites)
+		{
+			var screenPoint = Camera.main?.WorldToScreenPoint(transform.position);
+			if (screenPoint.HasValue)
+			{
+				itemsTooltip.SetActive(true);
+				itemsTooltip.transform.position = screenPoint.Value;
+			}
+		}
+
 		public void HideUseTooltip()
 		{
 			useTooltip.SetActive(false);
+		}
+		
+		public void HideItemsTooltip()
+		{
+			itemsTooltip.SetActive(false);
 		}
 	}
 }

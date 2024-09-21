@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6192362, y: 0.69531286, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7748887329307748788}
@@ -160,8 +160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraConfiner: {fileID: 3585150313267364957}
   doors:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2809969213858159546}
+  - {fileID: 2253189732160157067}
 --- !u!1001 &1232419585664628051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -224,6 +224,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1950442207611094154, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
   m_PrefabInstance: {fileID: 1232419585664628051}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2809969213858159546 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4027743131709124329, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+  m_PrefabInstance: {fileID: 1232419585664628051}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2223434d67994297a91a46085f6b4bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1313718183919166336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -421,6 +432,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+--- !u!114 &2253189732160157067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4027743131709124329, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+  m_PrefabInstance: {fileID: 2927791752783600482}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2223434d67994297a91a46085f6b4bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3724696574369636328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1950442207611094154, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}

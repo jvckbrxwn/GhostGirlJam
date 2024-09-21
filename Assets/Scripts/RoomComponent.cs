@@ -35,7 +35,7 @@ namespace Objects.Room
 			cameraManager = ServiceManager.Instance.GetManager<CameraManager>();
 			foreach (DoorComponent door in doors)
 			{
-				door.SetRoomComponent(this);
+ 				door.SetRoomComponent(this);
 			}
 		}
 
