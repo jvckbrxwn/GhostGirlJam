@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      floor_pokodivka_1_0: 6099487721549876600
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

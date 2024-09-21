@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      floor_1kolidor_0: -7728762659812189587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
