@@ -1509,6 +1509,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6b3a1348ed845c3a4c19ffe68c88ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2016984156 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 621088507765504021, guid: 86d925fbb672a496d9609420ff1035b5, type: 3}
+  m_PrefabInstance: {fileID: 2121265233719308511}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbd352d787747f2a679653523be25a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2075174790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,6 +1566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 2016984151}
   playerMovement: {fileID: 2016984155}
+  playerStatesController: {fileID: 2016984156}
 --- !u!1001 &2121265233719308511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1703,10 +1715,6 @@ PrefabInstance:
     - target: {fileID: 1880952604716055929, guid: 9e2631ba490844f0487d753035bd21f7, type: 3}
       propertyPath: m_Name
       value: UseTooltip -> Should be at the bottom, do not move it up
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880952604716055929, guid: 9e2631ba490844f0487d753035bd21f7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2453526052358715372, guid: 9e2631ba490844f0487d753035bd21f7, type: 3}
       propertyPath: m_LocalPosition.x
