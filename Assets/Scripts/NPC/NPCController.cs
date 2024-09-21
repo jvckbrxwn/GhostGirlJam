@@ -14,7 +14,7 @@ namespace Objects.Room.NPC
 		[Header("Items that we have to give to the ghost")]
 		[SerializeField] private List<PickUpType> pickUpItems;
 
-		[Header("Items that ghost give us after quest compition")]
+		[Header("Items that ghost give us after quest completion")]
 		[SerializeField] private List<PickUpType> itemsToGive;
 		
 		[field: SerializeField] public bool FinishedQuest { get; private set; } = false;
@@ -43,6 +43,11 @@ namespace Objects.Room.NPC
 				FinishedQuest = true;
 				Debug.Log("Quest was finished");
 				Debug.Log("Show tooltip with love");
+
+				foreach (PickUpType type in itemsToGive)
+				{
+					inventoryManager.AddItem(type, default);
+				}
 			}
 		}
 	}
