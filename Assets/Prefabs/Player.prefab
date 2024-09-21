@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 4815456949737556479}
   rigidbody2D: {fileID: 1567489793516514051}
-  speed: 2
+  speed: 3
 --- !u!212 &4639574016954529466
 SpriteRenderer:
   m_ObjectHideFlags: 0
