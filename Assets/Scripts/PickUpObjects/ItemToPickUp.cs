@@ -8,9 +8,21 @@ namespace Objects.Room.PickUpObjects
 {
 	public enum PickUpType
 	{
-		Chokolade,
+		Chokolade, //шоколад
+		Toy, //іграшка
+		Sugar, //цукор
+		StorageKey, //ключ від складу
+		Cookie, //печиво
+		Tea, //чай
+		Flour, //борошно 
+		TeaLeafs, //чайне листя
+		Spoon, //ложка
+		Pin, //голка
+		Thread, //нитка
+		Button, //ґудзик
+		Eggs, //яйця
 	}
-	
+
 	[RequireComponent(typeof(SpriteRenderer))]
 	public class ItemToPickUp : MonoBehaviour, IPickupable, IInteractable
 	{
@@ -34,6 +46,8 @@ namespace Objects.Room.PickUpObjects
 			tooltipManager = ServiceManager.Instance.GetManager<TooltipManager>();
 			inventoryManager = ServiceManager.Instance.GetManager<InventoryManager>();
 			playerTag = ServiceManager.Instance.GetManager<PlayerManager>().PlayerTag;
+
+			spriteRenderer.sprite = pickUpItemData.Sprite;
 		}
 
 		private void Update()

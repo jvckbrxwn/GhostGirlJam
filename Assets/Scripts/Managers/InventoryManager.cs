@@ -35,5 +35,10 @@ namespace Managers
 				pickupables.Remove(type);
 			}
 		}
+
+		public bool HasItem(PickUpType type)
+		{
+			return pickupables.ContainsKey(type);
+		}
 	}
 }
