@@ -9,6 +9,8 @@ namespace InteractableObjects
 {
 	public class FlourObjectController : BaseInteractableComponent
 	{
+		[SerializeField] private Transform spawnTooltipPoint;
+		
 		private bool finallySolved = false;
 
 		private DummyDatabaseManager dummyDatabaseManager;
@@ -29,14 +31,14 @@ namespace InteractableObjects
 
 			if (!inventoryManager.HasItem(PickUpType.StorageKey))
 			{
-				tooltipManager.ShowItemTooltip(transform,
+				tooltipManager.ShowItemTooltip(spawnTooltipPoint,
 					new List<Sprite> { dummyDatabaseManager.GetItemData(PickUpType.StorageKey).Data.Sprite });
 				return;
 			}
 
 			if (!inventoryManager.HasItem(PickUpType.MeasureCup))
 			{
-				tooltipManager.ShowItemTooltip(transform, "Чим би набрати борошно?");
+				tooltipManager.ShowItemTooltip(spawnTooltipPoint, "Чим би набрати борошно?");
 				return;
 			}
 

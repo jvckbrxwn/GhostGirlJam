@@ -14,6 +14,7 @@ namespace Player.Movement
 
 		private InputAction moveAction;
 		private DummyIntroSystem dummyIntroSystem;
+		private DummyQuestSystem dummyQuestSystem;
 
 		public bool IsMoving => moveAction.IsInProgress();
 
@@ -21,12 +22,20 @@ namespace Player.Movement
 		void Start()
 		{
 			moveAction = InputSystem.actions.FindAction("Move");
-			
+
 			moveAction.performed += MoveActionOnstarted;
 			moveAction.canceled += MoveActionOncanceled;
 
 			dummyIntroSystem = ServiceManager.Instance.GetManager<DummyIntroSystem>();
+			dummyQuestSystem = ServiceManager.Instance.GetManager<DummyQuestSystem>();
+
 			dummyIntroSystem.IntroWasFinished += OnIntroWasFinished;
+			dummyQuestSystem.GameIsDone += DummyQuestSystemOnGameIsDone;
+			data.MovementState = false;
+		}
+
+		private void DummyQuestSystemOnGameIsDone()
+		{
 			data.MovementState = false;
 		}
 
