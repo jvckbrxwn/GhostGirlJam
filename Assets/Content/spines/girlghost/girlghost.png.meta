@@ -1,0 +1,853 @@
+fileFormatVersion: 2
+guid: 431d450c25c6040538de201a10e574bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2699262244736402703
+    second: girlghost_0
+  - first:
+      213: -486368764005719878
+    second: girlghost_1
+  - first:
+      213: -3352563941656191377
+    second: girlghost_2
+  - first:
+      213: 7723859715450426610
+    second: girlghost_3
+  - first:
+      213: 2242228735063881649
+    second: girlghost_4
+  - first:
+      213: 8108344926614438915
+    second: girlghost_5
+  - first:
+      213: -5974290243811531982
+    second: girlghost_6
+  - first:
+      213: -4126378647786527044
+    second: girlghost_7
+  - first:
+      213: 1891314921482785755
+    second: girlghost_8
+  - first:
+      213: -3574201473190891846
+    second: girlghost_9
+  - first:
+      213: -2875461071092703207
+    second: girlghost_10
+  - first:
+      213: -1668846629901893709
+    second: girlghost_11
+  - first:
+      213: 9043114938074363388
+    second: girlghost_12
+  - first:
+      213: 4520277142419655461
+    second: girlghost_13
+  - first:
+      213: 2778885508042753873
+    second: girlghost_14
+  - first:
+      213: -9095039569655007721
+    second: girlghost_15
+  - first:
+      213: -443658545076403737
+    second: girlghost_16
+  - first:
+      213: -5885322709736952625
+    second: girlghost_17
+  - first:
+      213: -5812144267121641498
+    second: girlghost_18
+  - first:
+      213: 9184544651629041471
+    second: girlghost_19
+  - first:
+      213: -2496381032837651282
+    second: girlghost_20
+  - first:
+      213: -8218326284281851133
+    second: girlghost_21
+  - first:
+      213: -1366511886544295963
+    second: girlghost_22
+  - first:
+      213: 5777044276263880877
+    second: girlghost_23
+  - first:
+      213: 6306698493108493985
+    second: girlghost_24
+  - first:
+      213: 4803871120029213789
+    second: girlghost_25
+  - first:
+      213: -1101563097065103696
+    second: girlghost_26
+  - first:
+      213: -5336088781096791205
+    second: girlghost_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: girlghost_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1929
+        width: 218
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fafcda2a4b4a8ad0800000000000000
+      internalID: -2699262244736402703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 23
+        width: 1013
+        height: 1906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0e79f9f221049f0800000000000000
+      internalID: -486368764005719878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1929
+        width: 100
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e9cc29bdc4971d0800000000000000
+      internalID: -3352563941656191377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1929
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f45f5a0d79a03b60800000000000000
+      internalID: 7723859715450426610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_4
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1127
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7f7aa972ffd1f10800000000000000
+      internalID: 2242228735063881649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_5
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 975
+        width: 69
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304c13b30c0a68070800000000000000
+      internalID: 8108344926614438915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_6
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 794
+        width: 193
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23328882dae071da0800000000000000
+      internalID: -5974290243811531982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_7
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 975
+        width: 53
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb66de97b782cb6c0800000000000000
+      internalID: -4126378647786527044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_8
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 795
+        width: 48
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3906586ec4f3a10800000000000000
+      internalID: 1891314921482785755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_9
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 429
+        width: 247
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe67c272b2e56ec0800000000000000
+      internalID: -3574201473190891846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_10
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 730
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9102e04046f4818d0800000000000000
+      internalID: -2875461071092703207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_11
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 585
+        width: 53
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bff61005d017d8e0800000000000000
+      internalID: -1668846629901893709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_12
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 527
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf573faaf199f7d70800000000000000
+      internalID: 9043114938074363388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_13
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 524
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bcd309c104bbe30800000000000000
+      internalID: 4520277142419655461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_14
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 509
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1578e5a75a5909620800000000000000
+      internalID: 2778885508042753873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_15
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 498
+        width: 12
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7167790f2bde7c180800000000000000
+      internalID: -9095039569655007721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_16
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 461
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1872367eec7d9f0800000000000000
+      internalID: -443658545076403737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_17
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 430
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcce6916d22235ea0800000000000000
+      internalID: -5885322709736952625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_18
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 436
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e734e6459d175fa0800000000000000
+      internalID: -5812144267121641498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_19
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 23
+        width: 371
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f371018e2be067f70800000000000000
+      internalID: 9184544651629041471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_20
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 347
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea460b15da21b5dd0800000000000000
+      internalID: -2496381032837651282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_21
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 353
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303df1979c3a2fd80800000000000000
+      internalID: -8218326284281851133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_22
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 213
+        width: 123
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7ad25edac290de0800000000000000
+      internalID: -1366511886544295963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_23
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 212
+        width: 88
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da88962492f2c2050800000000000000
+      internalID: 5777044276263880877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_24
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 24
+        width: 282
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae193b7dd4e58750800000000000000
+      internalID: 6306698493108493985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_25
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 162
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d546918e457caa240800000000000000
+      internalID: 4803871120029213789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_26
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 23
+        width: 82
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be51c5133676b0f0800000000000000
+      internalID: -1101563097065103696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girlghost_27
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 23
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5357c0868762f5b0800000000000000
+      internalID: -5336088781096791205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      girlghost_0: -2699262244736402703
+      girlghost_1: -486368764005719878
+      girlghost_10: -2875461071092703207
+      girlghost_11: -1668846629901893709
+      girlghost_12: 9043114938074363388
+      girlghost_13: 4520277142419655461
+      girlghost_14: 2778885508042753873
+      girlghost_15: -9095039569655007721
+      girlghost_16: -443658545076403737
+      girlghost_17: -5885322709736952625
+      girlghost_18: -5812144267121641498
+      girlghost_19: 9184544651629041471
+      girlghost_2: -3352563941656191377
+      girlghost_20: -2496381032837651282
+      girlghost_21: -8218326284281851133
+      girlghost_22: -1366511886544295963
+      girlghost_23: 5777044276263880877
+      girlghost_24: 6306698493108493985
+      girlghost_25: 4803871120029213789
+      girlghost_26: -1101563097065103696
+      girlghost_27: -5336088781096791205
+      girlghost_3: 7723859715450426610
+      girlghost_4: 2242228735063881649
+      girlghost_5: 8108344926614438915
+      girlghost_6: -5974290243811531982
+      girlghost_7: -4126378647786527044
+      girlghost_8: 1891314921482785755
+      girlghost_9: -3574201473190891846
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
