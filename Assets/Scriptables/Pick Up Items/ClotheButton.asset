@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ClotheButton
   m_EditorClassIdentifier: 
   name: "\u0413\u0443\u0434\u0437\u0438\u043A"
-  sprite: {fileID: 2530564911472380330, guid: 8c27e8da1c72b7943b383f146eea3633, type: 3}
+  sprite: {fileID: 2530564911472380330, guid: c47a034813ba78e449b01b5bd8066e6e, type: 3}
   hint: 

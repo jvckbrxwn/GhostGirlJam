@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Sugar
   m_EditorClassIdentifier: 
   name: "\u0426\u0443\u043A\u043E\u0440"
-  sprite: {fileID: -3413006870710782370, guid: d4dc1571c89728546bcf02d214a4e5a8, type: 3}
+  sprite: {fileID: -3413006870710782370, guid: aaf4f13e051012945a743ca4c5ccf0d7, type: 3}
   hint: 

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: TeaLeaves
   m_EditorClassIdentifier: 
   name: "\u0427\u0430\u0439\u043D\u0435 \u043B\u0438\u0441\u0442\u044F"
-  sprite: {fileID: 8966672056016396696, guid: 4628379cf7578094082bf1a5b71f59f7, type: 3}
+  sprite: {fileID: 8966672056016396696, guid: 8652ad910012b844091fb0359d66a05c, type: 3}
   hint: 

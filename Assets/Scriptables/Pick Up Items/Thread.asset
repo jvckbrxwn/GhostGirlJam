@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Thread
   m_EditorClassIdentifier: 
   name: "\u041D\u0438\u0442\u043A\u0430"
-  sprite: {fileID: 6199497340360364196, guid: 181e126fcec5f964cb0f8227d918ea42, type: 3}
+  sprite: {fileID: 6199497340360364196, guid: 380cd7b09e79baa4aadd33861f94aa57, type: 3}
   hint: 

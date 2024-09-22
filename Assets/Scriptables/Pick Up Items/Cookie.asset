@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Cookie
   m_EditorClassIdentifier: 
   name: "\u041F\u0435\u0447\u0438\u0432\u043E"
-  sprite: {fileID: 5541253663642590004, guid: 0c550cc5e6851b742b65c7a3eeb4906a, type: 3}
+  sprite: {fileID: 5541253663642590004, guid: e670e0bb80cf78249979b06762e5ca2c, type: 3}
   hint: 

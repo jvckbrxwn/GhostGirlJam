@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Pin
   m_EditorClassIdentifier: 
   name: "\u0413\u043E\u043B\u043A\u0430"
-  sprite: {fileID: 542796057223170383, guid: 72e7a0bdf2feab34492a18c764eba673, type: 3}
+  sprite: {fileID: 542796057223170383, guid: b76983f6a4a19b94c8fdb04f874af73f, type: 3}
   hint: 

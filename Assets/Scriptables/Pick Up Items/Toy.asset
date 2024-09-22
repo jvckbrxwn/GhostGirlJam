@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Toy
   m_EditorClassIdentifier: 
   name: "\u0406\u0433\u0440\u0430\u0448\u043A\u0430"
-  sprite: {fileID: 7806516185817426972, guid: 4e9219f0c1e803943981fee8610e460e, type: 3}
+  sprite: {fileID: 7806516185817426972, guid: 75c25814b5685a243964dfbceeefa07e, type: 3}
   hint: 
