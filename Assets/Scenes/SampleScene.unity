@@ -1998,6 +1998,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 30212283}
     m_Modifications:
+    - target: {fileID: 3440582870669624189, guid: 20acb10c8c740416ca1307477905fecf, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 96cf607ae67b89341a058d0e0f9bbd03, type: 2}
+    - target: {fileID: 3440582870669624189, guid: 20acb10c8c740416ca1307477905fecf, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4445964333175232839, guid: 20acb10c8c740416ca1307477905fecf, type: 3}
       propertyPath: m_Name
       value: ItemsTooltip
