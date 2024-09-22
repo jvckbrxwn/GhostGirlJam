@@ -127,7 +127,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8402741989898584399, guid: 20cb4d47c6e373d4d9361b6f4ac312d4, type: 3}
+  m_Sprite: {fileID: 6958274397202305972, guid: f13aeedf220da044d819d8edd8e39edb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -722,6 +722,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2284112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Size.y
+      value: 0.63741654
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.28341627
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.18129173
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980195040000745485, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980195040000745485, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4323983194198194303, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
       propertyPath: m_Name
       value: Door_r0t
@@ -872,6 +896,30 @@ PrefabInstance:
     - target: {fileID: 1950442207611094154, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9147938
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Size.y
+      value: 0.36925527
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.20448312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.065148816
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980195040000745485, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980195040000745485, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4323983194198194303, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
       propertyPath: m_Name
@@ -1386,6 +1434,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2862437
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Size.y
+      value: 0.41000685
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.14744818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2310721262838221352, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.084184125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980195040000745485, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980195040000745485, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4323983194198194303, guid: 156126510d0204d89bd713b0e2200fcd, type: 3}
       propertyPath: m_Name
       value: Door_r0l
@@ -1635,11 +1707,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1419755567890386940, guid: c14fe4ac73f0e874198851b0b9e9c996, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.32756
+      value: 6.49
       objectReference: {fileID: 0}
     - target: {fileID: 1419755567890386940, guid: c14fe4ac73f0e874198851b0b9e9c996, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7592965
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: 1419755567890386940, guid: c14fe4ac73f0e874198851b0b9e9c996, type: 3}
       propertyPath: m_LocalPosition.z
