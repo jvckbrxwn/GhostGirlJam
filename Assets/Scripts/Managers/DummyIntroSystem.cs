@@ -13,6 +13,7 @@ namespace Managers
 	public class DummyIntroSystem : MonoBehaviour, IManager
 	{
 		[SerializeField] private GameObject imageWithText;
+		[SerializeField] private GameObject rulesGameObject;
 		[SerializeField] private AudioSource speech;
 		[SerializeField] private AudioSource mainAudio;
 		[Range(0, 1), SerializeField] private float volume;
@@ -21,6 +22,7 @@ namespace Managers
 		public event Action IntroWasFinished;
 
 		public bool IntroIsFinished { get; private set; } = false;
+		public bool RulesIsFinished { get; private set; } = false;
 
 		private CancellationTokenSource token;
 
@@ -43,30 +45,69 @@ namespace Managers
 			}
 		}
 
+		private void StopRules()
+		{
+			
+		}
+
 		private async UniTask WaitForSpeech(CancellationToken cancellationToken)
 		{
 			int delay = Mathf.RoundToInt(speech.clip.length * 1000);
 			await UniTask.Delay(delay, cancellationToken: cancellationToken);
-			Complete();
+			CompleteIntro();
+			await UniTask.Delay(300, cancellationToken: cancellationToken);
+			OpenRules();
+			await UniTask.Delay(3000, cancellationToken: cancellationToken);
+			CloseRules();
+		}
+
+		private async UniTask WaitForRules(CancellationToken cancellationToken)
+		{
+			CompleteIntro();
+			await UniTask.Delay(300, cancellationToken: cancellationToken);
+			OpenRules();
+			await UniTask.Delay(3000, cancellationToken: cancellationToken);
+			CloseRules();
+			IntroWasFinished?.Invoke();
+		}
+
+		private void CloseRules()
+		{
+			rulesGameObject.GetComponentInChildren<TMP_Text>().DOFade(0, 0.3f);
+			imageWithText.GetComponent<Image>().DOFade(0, 0.3f).onComplete+= () =>
+			{
+				imageWithText.gameObject.SetActive(false);
+			};
+			
+			rulesGameObject.GetComponent<Image>().DOFade(0, 0.3f).onComplete+= () =>
+			{
+				rulesGameObject.gameObject.SetActive(false);
+			};
+		}
+
+		private void OpenRules()
+		{
+			rulesGameObject.SetActive(true);
+			rulesGameObject.GetComponentInChildren<TMP_Text>().DOFade(1, 0.3f);
 		}
 
 		private void StopSpeech()
 		{
 			token.Cancel();
 			speech.Stop();
-			Complete();
+			CompleteIntro();
 			token = new CancellationTokenSource();
+
+			WaitForRules(token.Token).Forget();
 		}
 
-		private void Complete()
+		private void CompleteIntro()
 		{
 			speech.Stop();
 			mainAudio.Play();
 			mainAudio.volume = themeVolume;
 			imageWithText.GetComponentInChildren<TMP_Text>().DOFade(0, 0.3f);
-			imageWithText.GetComponent<Image>().DOFade(0, 0.3f).onComplete += () => imageWithText.SetActive(false);
 			IntroIsFinished = true;
-			IntroWasFinished?.Invoke();
 		}
 	}
 }

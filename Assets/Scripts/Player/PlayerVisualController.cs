@@ -34,15 +34,13 @@ namespace Player
 			switch (type)
 			{
 				case PlayerStateType.Girl:
-					ghostAnimation.AnimationState.SetAnimation(0, "out", false).Complete += track =>
+					var track = ghostAnimation.AnimationState.SetAnimation(0, "out", false);
+					if (coroutine != null)
 					{
-						if (coroutine != null)
-						{
-							StopCoroutine(coroutine);
-						}
+						StopCoroutine(coroutine);
+					}
 
-						coroutine = StartCoroutine(DisableGhost(track));
-					};
+					coroutine = StartCoroutine(DisableGhost(track));
 					animation.gameObject.SetActive(true);
 					var anim = playerManager.Movement.IsMoving ? "walk" : "idle";
 					animation.AnimationState.SetAnimation(0, anim, true);
