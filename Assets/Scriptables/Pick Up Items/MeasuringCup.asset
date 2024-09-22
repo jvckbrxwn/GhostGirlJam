@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: MeasuringCup
   m_EditorClassIdentifier: 
   name: "\u041C\u0456\u0440\u043D\u0430 \u0447\u0430\u0448\u043A\u0430 "
-  sprite: {fileID: -2860855866261180225, guid: cc6187112b1692a4d931deb30f655d69, type: 3}
+  sprite: {fileID: 6846289189808860801, guid: 0cc2e87622feebc4abcc5a5fc295ee8e, type: 3}
+  hint: 

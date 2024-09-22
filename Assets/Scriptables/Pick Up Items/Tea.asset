@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Tea
   m_EditorClassIdentifier: 
   name: "\u0427\u0430\u0439"
-  sprite: {fileID: 6729912375798272481, guid: b6c518563e05c704993f7879d9d5510e, type: 3}
+  sprite: {fileID: 2344250499008918450, guid: 94a5efb709befd24ea87d0649cd0a8bc, type: 3}
+  hint: 

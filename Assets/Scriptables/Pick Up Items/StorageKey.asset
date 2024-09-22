@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: StorageKey
   m_EditorClassIdentifier: 
   name: "\u041A\u043B\u044E\u0447 \u0432\u0456\u0434 \u0441\u043A\u043B\u0430\u0434\u0443"
-  sprite: {fileID: 1095141833252711340, guid: 20beb4408078bb348bce7ab17d75ac2b, type: 3}
+  sprite: {fileID: 1095141833252711340, guid: 36ef767e5d11d1643856f049d275ebbb, type: 3}
+  hint: 

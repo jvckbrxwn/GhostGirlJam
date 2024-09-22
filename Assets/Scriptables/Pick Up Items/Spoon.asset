@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Spoon
   m_EditorClassIdentifier: 
   name: "\u041B\u043E\u0436\u043A\u0430"
-  sprite: {fileID: -3411414237561161789, guid: 4ec5b68a2443de74689e97a7404ad712, type: 3}
+  sprite: {fileID: -3411414237561161789, guid: a5d23bc7cb0f6bb48aedd360fb9ab115, type: 3}
+  hint: 
