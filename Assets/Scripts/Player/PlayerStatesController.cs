@@ -1,7 +1,9 @@
 using System;
+using System.Collections;
 using Cysharp.Threading.Tasks;
 using Player.Movement;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Player
 {
@@ -17,8 +19,10 @@ namespace Player
 		[SerializeField] private int ghostStateDurationInSeconds = 3;
 		[SerializeField] private int ghostStateCooldownInSeconds = 10;
 
+		[Space, SerializeField] private Image ghostUIImage;
+
 		public event Action<PlayerStateType> PlayerStateChanged;
-		
+
 		public PlayerStateType CurrentState { get; private set; }
 		public bool CooldownIsActive { get; private set; } = false;
 
@@ -43,12 +47,25 @@ namespace Player
 		private async UniTask ExecuteGhostState()
 		{
 			CooldownIsActive = true;
+			ghostUIImage.fillAmount = 0;
 			await UniTask.Delay(TimeSpan.FromSeconds(ghostStateDurationInSeconds));
 			ChangeState(PlayerStateType.Girl).Forget();
 		}
-		
+
+		private IEnumerator UpdateGhostUIImage(float time)
+		{
+			float t = 0;
+			while (time >= t)
+			{
+				ghostUIImage.fillAmount = t / time;
+				t += Time.deltaTime;
+				yield return 0;
+			}
+		}
+
 		private async UniTask ExecuteGirlState()
 		{
+			StartCoroutine(UpdateGhostUIImage(ghostStateCooldownInSeconds));
 			await UniTask.Delay(TimeSpan.FromSeconds(ghostStateCooldownInSeconds));
 			CooldownIsActive = false;
 		}

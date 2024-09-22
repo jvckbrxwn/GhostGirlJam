@@ -88,7 +88,7 @@ namespace Objects.Room.NPC
 
 				FinishedQuest = true;
 				tooltipManager.ShowHeartTooltip(transform);
-				if (type != NPCType.Cook)
+				if (type != NPCType.Cook && type != NPCType.LittleGirl)
 				{
 					skeletonAnimation?.AnimationState.SetAnimation(0, "idle_2", true);
 				}

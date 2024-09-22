@@ -239,6 +239,7 @@ MonoBehaviour:
   playerVisualController: {fileID: 5453602171719578151}
   ghostStateDurationInSeconds: 3
   ghostStateCooldownInSeconds: 10
+  ghostUIImage: {fileID: 0}
 --- !u!114 &5453602171719578151
 MonoBehaviour:
   m_ObjectHideFlags: 0
