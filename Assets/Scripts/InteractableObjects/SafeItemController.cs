@@ -2,6 +2,7 @@ using InteractableObjects.Base;
 using Managers;
 using Objects.Room.NPC;
 using Objects.Room.PickUpObjects;
+using ServiceLocator;
 
 namespace InteractableObjects
 {
@@ -10,6 +11,12 @@ namespace InteractableObjects
 		private bool finallySolved = false;
 
 		private DummyQuestSystem dummyQuestSystem;
+
+		protected override void Start()
+		{
+			base.Start();
+			dummyQuestSystem = ServiceManager.Instance.GetManager<DummyQuestSystem>();
+		}
 
 		public override void Interact()
 		{
