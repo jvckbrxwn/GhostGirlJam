@@ -15,11 +15,13 @@ namespace Player.Movement
 		private InputAction moveAction;
 		private DummyIntroSystem dummyIntroSystem;
 
+		public bool IsMoving => moveAction.IsInProgress();
+
 		// Start is called before the first frame update
 		void Start()
 		{
 			moveAction = InputSystem.actions.FindAction("Move");
-
+			
 			moveAction.performed += MoveActionOnstarted;
 			moveAction.canceled += MoveActionOncanceled;
 

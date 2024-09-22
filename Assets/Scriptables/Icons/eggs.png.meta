@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3b6be1d7233c3724b9f003bf069afd9f
+guid: 64b026ca57ee35845b53b0346e617bd8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -629307550047528691
-    second: button_1685425_0
+      213: -7733103908128983729
+    second: eggs_17432658_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,17 +122,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_1685425_0
+      name: eggs_17432658_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 37
+        y: 37
+        width: 438
+        height: 438
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0912f01e104447f0800000000000000
-      internalID: -629307550047528691
+      spriteID: f4579c0a7fe7ea490800000000000000
+      internalID: -7733103908128983729
       vertices: []
       indices: 
       edges: []
@@ -157,7 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      button_1685425_0: -629307550047528691
+      eggs_17432658_0: -7733103908128983729
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

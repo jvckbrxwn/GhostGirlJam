@@ -2472,6 +2472,14 @@ PrefabInstance:
       propertyPath: ghostUIImage
       value: 
       objectReference: {fileID: 2108605408}
+    - target: {fileID: 1805854574640272503, guid: 86d925fbb672a496d9609420ff1035b5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112962732710143634, guid: 86d925fbb672a496d9609420ff1035b5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6617007724240556028, guid: 86d925fbb672a496d9609420ff1035b5, type: 3}
       propertyPath: m_Mesh
       value: 
