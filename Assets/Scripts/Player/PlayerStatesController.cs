@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using Player.Movement;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,7 @@ namespace Player
 		[SerializeField] private int ghostStateCooldownInSeconds = 10;
 
 		[Space, SerializeField] private Image ghostUIImage;
+		[SerializeField] private Image vignette;
 
 		public event Action<PlayerStateType> PlayerStateChanged;
 
@@ -48,6 +50,7 @@ namespace Player
 		{
 			CooldownIsActive = true;
 			ghostUIImage.fillAmount = 0;
+			vignette.DOFade(1, 0.3f);
 			await UniTask.Delay(TimeSpan.FromSeconds(ghostStateDurationInSeconds));
 			ChangeState(PlayerStateType.Girl).Forget();
 		}
@@ -65,6 +68,7 @@ namespace Player
 
 		private async UniTask ExecuteGirlState()
 		{
+			vignette.DOFade(0, 0.3f);
 			StartCoroutine(UpdateGhostUIImage(ghostStateCooldownInSeconds));
 			await UniTask.Delay(TimeSpan.FromSeconds(ghostStateCooldownInSeconds));
 			CooldownIsActive = false;
