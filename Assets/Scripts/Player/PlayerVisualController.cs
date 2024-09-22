@@ -38,6 +38,7 @@ namespace Player
 					animation.gameObject.SetActive(true);
 					var anim = playerManager.Movement.IsMoving ? "walk" : "idle";
 					animation.AnimationState.SetAnimation(0, anim, true);
+					animation.AnimationState.TimeScale = playerManager.Movement.IsMoving ? speedWalk : speedIdle;
 					StateChanged?.Invoke(animation);
 					break;
 				case PlayerStateType.Ghost:
@@ -46,6 +47,7 @@ namespace Player
 					ghostAnimation.AnimationState.SetAnimation(0, "in", false);
 					anim = playerManager.Movement.IsMoving ? "fly" : "idle";
 					ghostAnimation.AnimationState.AddAnimation(0, anim, true, 0);
+					ghostAnimation.AnimationState.TimeScale = playerManager.Movement.IsMoving ? speedWalk : speedIdle;
 					StateChanged?.Invoke(ghostAnimation);
 					break;
 				default:
