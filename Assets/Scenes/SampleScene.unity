@@ -1339,6 +1339,10 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 149034540}
+    - target: {fileID: 2665908063940205882, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2809969213858159546, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
       propertyPath: connectedDoor
       value: 
@@ -1391,9 +1395,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 829955973414501825, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 7308464431727394030, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}

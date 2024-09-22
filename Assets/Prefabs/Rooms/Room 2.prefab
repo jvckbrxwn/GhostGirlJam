@@ -828,9 +828,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostLittleGirl
       objectReference: {fileID: 0}
-    - target: {fileID: 5600124474160415853, guid: 3befb626b9f505b469b8437e8fadef99, type: 3}
-      propertyPath: type
-      value: 2
+    - target: {fileID: 6067527395082101774, guid: 3befb626b9f505b469b8437e8fadef99, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803883854408923936, guid: 3befb626b9f505b469b8437e8fadef99, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803883854408923936, guid: 3befb626b9f505b469b8437e8fadef99, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6803883854408923936, guid: 3befb626b9f505b469b8437e8fadef99, type: 3}
       propertyPath: m_LocalPosition.x
