@@ -386,7 +386,7 @@ MonoBehaviour:
   animation: {fileID: 7731841559455073876}
   ghostAnimation: {fileID: 6783889993863913118}
   speedIdle: 1
-  speedWalk: 1.65
+  speedWalk: 1.8
 --- !u!70 &4114157625450027499
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

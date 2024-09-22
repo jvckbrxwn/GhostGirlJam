@@ -14,14 +14,16 @@ namespace Managers
 	{
 		[SerializeField] private GameObject imageWithText;
 		[SerializeField] private AudioSource speech;
+		[SerializeField] private AudioSource mainAudio;
 		[Range(0, 1), SerializeField] private float volume;
+		[Range(0, 1), SerializeField] private float themeVolume;
 
 		public event Action IntroWasFinished;
 
 		public bool IntroIsFinished { get; private set; } = false;
 
 		private CancellationTokenSource token;
-		
+
 		private void Awake()
 		{
 			token = new CancellationTokenSource();
@@ -45,21 +47,26 @@ namespace Managers
 		{
 			int delay = Mathf.RoundToInt(speech.clip.length * 1000);
 			await UniTask.Delay(delay, cancellationToken: cancellationToken);
-			imageWithText.GetComponentInChildren<TMP_Text>().DOFade(0, 0.3f);
-			imageWithText.GetComponent<Image>().DOFade(0, 0.3f).onComplete += () => imageWithText.SetActive(false);
-			IntroIsFinished = true;
-			IntroWasFinished?.Invoke();
+			Complete();
 		}
 
 		private void StopSpeech()
 		{
 			token.Cancel();
 			speech.Stop();
+			Complete();
+			token = new CancellationTokenSource();
+		}
+
+		private void Complete()
+		{
+			speech.Stop();
+			mainAudio.Play();
+			mainAudio.volume = themeVolume;
 			imageWithText.GetComponentInChildren<TMP_Text>().DOFade(0, 0.3f);
 			imageWithText.GetComponent<Image>().DOFade(0, 0.3f).onComplete += () => imageWithText.SetActive(false);
 			IntroIsFinished = true;
 			IntroWasFinished?.Invoke();
-			token = new CancellationTokenSource();
 		}
 	}
 }
