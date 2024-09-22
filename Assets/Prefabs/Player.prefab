@@ -240,6 +240,7 @@ MonoBehaviour:
   ghostStateDurationInSeconds: 3
   ghostStateCooldownInSeconds: 10
   ghostUIImage: {fileID: 0}
+  vignette: {fileID: 0}
 --- !u!114 &5453602171719578151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animation: {fileID: 7731841559455073876}
+  speedIdle: 1
+  speedWalk: 1.65
 --- !u!70 &4114157625450027499
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

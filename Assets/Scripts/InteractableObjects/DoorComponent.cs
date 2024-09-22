@@ -75,6 +75,7 @@ namespace InteractableObjects
 			if (connectedDoor is null)
 			{
 				Debug.Assert(connectedDoor is null, "connectedDoor is null", this);
+				tooltipManager.ShowItemTooltip(transform, "Нєа, не піддається :(");
 				return;
 			}
 

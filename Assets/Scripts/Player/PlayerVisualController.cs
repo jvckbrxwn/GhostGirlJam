@@ -8,6 +8,9 @@ namespace Player
 	{
 		[SerializeField] private new SkeletonAnimation animation;
 
+		[Space, SerializeField] private float speedIdle = 1;
+		[SerializeField] private float speedWalk = 1;
+		
 		public void ChangeState(PlayerStateType type)
 		{
 			Debug.Log($"Try to switch to {type}");
@@ -37,13 +40,13 @@ namespace Player
 		public void MoveAnimation()
 		{
 			animation.AnimationState.SetAnimation(0, "walk", true);
-			animation.AnimationState.TimeScale = 1.5f;
+			animation.AnimationState.TimeScale = speedWalk;
 		}
 		
 		public void IdleAnimation()
 		{
 			animation.AnimationState.SetAnimation(0, "idle", true);
-			animation.AnimationState.TimeScale = 1f;
+			animation.AnimationState.TimeScale = speedIdle;
 		}
 	}
 }
