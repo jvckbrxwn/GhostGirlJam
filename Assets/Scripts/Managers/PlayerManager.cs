@@ -60,7 +60,9 @@ namespace Managers
 
 		public void TranslateTo(DoorComponent door)
 		{
-			TranslateTo(door.transform.position);
+			var newPos = door.transform.position;
+			var p = door.transform.InverseTransformDirection(Vector3.up);
+			TranslateTo(newPos - p);
 			door.Room.ChangeRoom();
 		}
 
