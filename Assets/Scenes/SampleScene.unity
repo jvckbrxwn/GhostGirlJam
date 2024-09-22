@@ -548,6 +548,10 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 178871464}
+    - target: {fileID: 3983696511549296712, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 5018162299649593442, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
       propertyPath: m_Name
       value: Storage Room
@@ -1647,6 +1651,10 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 4422485246653803914}
+    - target: {fileID: 3111911403139949545, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8402741989898584399, guid: 20cb4d47c6e373d4d9361b6f4ac312d4, type: 3}
     - target: {fileID: 5018162299649593442, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
       propertyPath: m_Name
       value: Children Room
@@ -1759,6 +1767,7 @@ MonoBehaviour:
   - {fileID: 841989436}
   - {fileID: 494717921}
   - {fileID: 2067819295}
+  finishImage: {fileID: 0}
 --- !u!1 &1624737497
 GameObject:
   m_ObjectHideFlags: 0
