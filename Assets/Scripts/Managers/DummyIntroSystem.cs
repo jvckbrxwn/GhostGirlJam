@@ -45,11 +45,6 @@ namespace Managers
 			}
 		}
 
-		private void StopRules()
-		{
-			
-		}
-
 		private async UniTask WaitForSpeech(CancellationToken cancellationToken)
 		{
 			int delay = Mathf.RoundToInt(speech.clip.length * 1000);
@@ -59,6 +54,7 @@ namespace Managers
 			OpenRules();
 			await UniTask.Delay(3000, cancellationToken: cancellationToken);
 			CloseRules();
+			IntroWasFinished?.Invoke();
 		}
 
 		private async UniTask WaitForRules(CancellationToken cancellationToken)
