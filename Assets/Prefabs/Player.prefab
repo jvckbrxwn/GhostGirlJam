@@ -311,7 +311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 4815456949737556479}
   rigidbody2D: {fileID: 1567489793516514051}
-  speed: 3
+  speed: 4
   playerVisualController: {fileID: 5453602171719578151}
 --- !u!50 &1567489793516514051
 Rigidbody2D:
@@ -368,7 +368,7 @@ MonoBehaviour:
   playerMovement: {fileID: 7406963248128420536}
   playerVisualController: {fileID: 5453602171719578151}
   ghostStateDurationInSeconds: 3
-  ghostStateCooldownInSeconds: 10
+  ghostStateCooldownInSeconds: 5
   ghostUIImage: {fileID: 0}
   vignette: {fileID: 0}
 --- !u!114 &5453602171719578151
