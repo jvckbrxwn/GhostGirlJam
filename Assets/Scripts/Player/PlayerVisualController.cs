@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using Managers;
 using ServiceLocator;
+using Spine;
 using Spine.Unity;
 using UnityEngine;
 
@@ -15,6 +17,7 @@ namespace Player
 		[SerializeField] private float speedWalk = 1;
 
 		private PlayerManager playerManager;
+		private Coroutine coroutine;
 
 		public event Action<SkeletonAnimation> StateChanged;
 
@@ -31,9 +34,14 @@ namespace Player
 			switch (type)
 			{
 				case PlayerStateType.Girl:
-					ghostAnimation.AnimationState.SetAnimation(0, "out", false).Complete += _ =>
+					ghostAnimation.AnimationState.SetAnimation(0, "out", false).Complete += track =>
 					{
-						ghostAnimation.gameObject.SetActive(false);
+						if (coroutine != null)
+						{
+							StopCoroutine(coroutine);
+						}
+
+						coroutine = StartCoroutine(DisableGhost(track));
 					};
 					animation.gameObject.SetActive(true);
 					var anim = playerManager.Movement.IsMoving ? "walk" : "idle";
@@ -53,6 +61,12 @@ namespace Player
 				default:
 					throw new ArgumentOutOfRangeException(nameof(type), type, null);
 			}
+		}
+
+		private IEnumerator DisableGhost(TrackEntry trackEntry)
+		{
+			yield return new WaitUntil(() => trackEntry.IsComplete);
+			ghostAnimation.gameObject.SetActive(false);
 		}
 
 		public void Flip(bool x)
@@ -81,17 +95,17 @@ namespace Player
 			}
 		}
 
-		public void IdleAnimation()
+		public void IdleAnimation(bool loop = true)
 		{
 			if (animation.gameObject.activeSelf)
 			{
-				animation.AnimationState.SetAnimation(0, "idle", true);
+				animation.AnimationState.SetAnimation(0, "idle", loop);
 				animation.AnimationState.TimeScale = speedIdle;
 			}
 
 			if (ghostAnimation.gameObject.activeSelf)
 			{
-				ghostAnimation.AnimationState.SetAnimation(0, "idle", true);
+				ghostAnimation.AnimationState.SetAnimation(0, "idle", loop);
 				ghostAnimation.AnimationState.TimeScale = speedIdle;
 			}
 		}
