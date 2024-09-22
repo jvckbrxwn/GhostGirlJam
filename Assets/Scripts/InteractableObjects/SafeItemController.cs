@@ -31,7 +31,7 @@ namespace InteractableObjects
 				tooltipManager.ShowItemTooltip(transform, "Потрібно знайти комбінацію");
 				return;
 			}
-			
+
 			if (!dummyQuestSystem.IsQuestReady(NPCType.Maid))
 			{
 				tooltipManager.ShowItemTooltip(transform, "Покоївка не дозволяє відкрити сейф");

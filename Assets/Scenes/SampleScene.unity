@@ -243,7 +243,7 @@ PrefabInstance:
       objectReference: {fileID: 1069399041}
     - target: {fileID: 5018162299649593442, guid: f23c1f5ab0e1f45d7afe75d76ed73b09, type: 3}
       propertyPath: m_Name
-      value: Room 6
+      value: Balcony
       objectReference: {fileID: 0}
     - target: {fileID: 7841962798168862485, guid: f23c1f5ab0e1f45d7afe75d76ed73b09, type: 3}
       propertyPath: m_LocalPosition.x
@@ -326,7 +326,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5018162299649593442, guid: 45fb4f3d0128644e2814931030260e3e, type: 3}
       propertyPath: m_Name
-      value: Room 5
+      value: Kitchen
       objectReference: {fileID: 0}
     - target: {fileID: 5462648047631348176, guid: 45fb4f3d0128644e2814931030260e3e, type: 3}
       propertyPath: m_Mesh
@@ -471,7 +471,7 @@ PrefabInstance:
       objectReference: {fileID: 178871464}
     - target: {fileID: 5018162299649593442, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
       propertyPath: m_Name
-      value: Room 4
+      value: Storage Room
       objectReference: {fileID: 0}
     - target: {fileID: 7841962798168862485, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1104,7 +1104,7 @@ PrefabInstance:
       objectReference: {fileID: 149034541}
     - target: {fileID: 5018162299649593442, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
       propertyPath: m_Name
-      value: Room 1
+      value: Maid's Room
       objectReference: {fileID: 0}
     - target: {fileID: 5363137089006327345, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
       propertyPath: connectedDoor
@@ -1345,7 +1345,7 @@ PrefabInstance:
       objectReference: {fileID: 4422485246653803914}
     - target: {fileID: 5018162299649593442, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
       propertyPath: m_Name
-      value: Room 2
+      value: Children Room
       objectReference: {fileID: 0}
     - target: {fileID: 7841962798168862485, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2105,7 +2105,7 @@ PrefabInstance:
       objectReference: {fileID: 1069399042}
     - target: {fileID: 5018162299649593442, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
       propertyPath: m_Name
-      value: Room
+      value: Butler Room
       objectReference: {fileID: 0}
     - target: {fileID: 7841962798168862485, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
       propertyPath: m_LocalPosition.x
