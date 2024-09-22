@@ -1,4 +1,3 @@
-using System;
 using Cysharp.Threading.Tasks;
 using InteractableObjects;
 using InteractableObjects.Base;
@@ -19,12 +18,13 @@ namespace Managers
 		
 		private InputAction moveAction;
 
+		private DummyIntroSystem dummyIntroSystem;
+
 		public string PlayerTag => playerData.Tag;
 		public PlayerStateType CurrentState => playerStatesController.CurrentState;
 		public PlayerStatesController StatesController => playerStatesController;
 		public PlayerMovement Movement => playerMovement;
-
-
+		
 		private void Awake()
 		{
 			ServiceManager.Instance.AddManager(this);
@@ -43,8 +43,9 @@ namespace Managers
 			}
 		}
 
-		public void Init()
+		private void Init()
 		{
+			dummyIntroSystem = ServiceManager.Instance.GetManager<DummyIntroSystem>();
 			moveAction = InputSystem.actions.FindAction("Ghost");
 		}
 
@@ -60,14 +61,19 @@ namespace Managers
 
 		public void TranslateTo(DoorComponent door)
 		{
-			var newPos = door.transform.position;
-			var p = door.transform.InverseTransformDirection(Vector3.up);
+			Vector3 newPos = door.transform.position;
+			Vector3 p = door.transform.InverseTransformDirection(Vector3.up);
 			TranslateTo(newPos - p);
 			door.Room.ChangeRoom();
 		}
 
 		private async UniTask ChangeState(PlayerStateType type)
 		{
+			if (!dummyIntroSystem.IntroIsFinished)
+			{
+				await UniTask.CompletedTask;
+			}
+			
 			await playerStatesController.ChangeState(type);
 		}
 		

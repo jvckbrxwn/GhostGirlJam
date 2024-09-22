@@ -1,3 +1,5 @@
+using Managers;
+using ServiceLocator;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +13,7 @@ namespace Player.Movement
 		[SerializeField] private PlayerVisualController playerVisualController;
 
 		private InputAction moveAction;
+		private DummyIntroSystem dummyIntroSystem;
 
 		// Start is called before the first frame update
 		void Start()
@@ -19,6 +22,15 @@ namespace Player.Movement
 
 			moveAction.performed += MoveActionOnstarted;
 			moveAction.canceled += MoveActionOncanceled;
+
+			dummyIntroSystem = ServiceManager.Instance.GetManager<DummyIntroSystem>();
+			dummyIntroSystem.IntroWasFinished += OnIntroWasFinished;
+			data.MovementState = false;
+		}
+
+		private void OnIntroWasFinished()
+		{
+			data.MovementState = true;
 		}
 
 		private void MoveActionOncanceled(InputAction.CallbackContext obj)
