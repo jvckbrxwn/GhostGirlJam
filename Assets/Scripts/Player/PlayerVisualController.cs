@@ -37,7 +37,7 @@ namespace Player
 					};
 					animation.gameObject.SetActive(true);
 					var anim = playerManager.Movement.IsMoving ? "walk" : "idle";
-					animation.AnimationState.SetAnimation(0, anim, playerManager.Movement.IsMoving);
+					animation.AnimationState.SetAnimation(0, anim, true);
 					StateChanged?.Invoke(animation);
 					break;
 				case PlayerStateType.Ghost:
@@ -45,7 +45,7 @@ namespace Player
 					ghostAnimation.gameObject.SetActive(true);
 					ghostAnimation.AnimationState.SetAnimation(0, "in", false);
 					anim = playerManager.Movement.IsMoving ? "fly" : "idle";
-					ghostAnimation.AnimationState.AddAnimation(0, anim, playerManager.Movement.IsMoving, 0);
+					ghostAnimation.AnimationState.AddAnimation(0, anim, true, 0);
 					StateChanged?.Invoke(ghostAnimation);
 					break;
 				default:
