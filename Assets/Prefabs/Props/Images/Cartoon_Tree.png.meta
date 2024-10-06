@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cartoon_Tree_0: -3985695503267865766
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

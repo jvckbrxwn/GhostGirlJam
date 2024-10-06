@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bed-removebg-preview_0: 286850768780570270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

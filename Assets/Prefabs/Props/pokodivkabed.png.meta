@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pokodivkabed_0: -3490451093187156040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

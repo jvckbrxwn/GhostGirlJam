@@ -241,7 +241,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mouse-right-click-icon_0: 8055279324365869777
+      mouse-right-click-icon_1: -3083447811369814036
+      mouse-right-click-icon_2: 8059865216119596423
+      mouse-right-click-icon_3: 4975928921859355817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

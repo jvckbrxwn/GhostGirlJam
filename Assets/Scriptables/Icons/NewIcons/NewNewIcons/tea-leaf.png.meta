@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tea-leaf_0: 8966672056016396696
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Green_Tree_Cartoon_0: -2890194466177818066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

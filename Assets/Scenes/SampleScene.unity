@@ -546,6 +546,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2093463740173225184, guid: 45fb4f3d0128644e2814931030260e3e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214098027342308300, guid: 45fb4f3d0128644e2814931030260e3e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5018162299649593442, guid: 45fb4f3d0128644e2814931030260e3e, type: 3}
       propertyPath: m_Name
       value: Kitchen
@@ -553,6 +561,10 @@ PrefabInstance:
     - target: {fileID: 5462648047631348176, guid: 45fb4f3d0128644e2814931030260e3e, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706648873297205006, guid: 45fb4f3d0128644e2814931030260e3e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6644284511611146180, guid: 45fb4f3d0128644e2814931030260e3e, type: 3}
       propertyPath: connectedDoor
@@ -687,13 +699,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1258416230125522941, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3582589034071815492, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 178871464}
+    - target: {fileID: 5000065790144563846, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5018162299649593442, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
       propertyPath: m_Name
       value: Storage Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530907997014854559, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7841962798168862485, guid: 09f88868c408a4f7eaa412316721b9d3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1571,6 +1595,14 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 149034541}
+    - target: {fileID: 2355655843335603786, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768968375671100228, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5018162299649593442, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
       propertyPath: m_Name
       value: Maid's Room
@@ -1622,6 +1654,10 @@ PrefabInstance:
     - target: {fileID: 7841962798168862485, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051974225237649252, guid: 5d34f63bc7d084a39bc73da498de7be0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2029,6 +2065,14 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 4422485246653803914}
+    - target: {fileID: 4070792001085663242, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112475762081053936, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5018162299649593442, guid: a1cba42fd8f8244308982b595de4bff5, type: 3}
       propertyPath: m_Name
       value: Children Room
@@ -3083,9 +3127,17 @@ PrefabInstance:
       propertyPath: ghostUIImage
       value: 
       objectReference: {fileID: 2108605408}
+    - target: {fileID: 679892354757002285, guid: 86d925fbb672a496d9609420ff1035b5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1805854574640272503, guid: 86d925fbb672a496d9609420ff1035b5, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3112962732710143634, guid: 86d925fbb672a496d9609420ff1035b5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5453602171719578151, guid: 86d925fbb672a496d9609420ff1035b5, type: 3}
       propertyPath: speedWalk
@@ -3257,6 +3309,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66017918011981555, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 118858514805277812, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348486247476490249, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2185413925342851095, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
       propertyPath: connectedDoor
       value: 
@@ -3265,9 +3329,17 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 1069399042}
+    - target: {fileID: 4950704810993926068, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5018162299649593442, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
       propertyPath: m_Name
       value: Butler Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502632633709941824, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7841962798168862485, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3312,6 +3384,10 @@ PrefabInstance:
     - target: {fileID: 8552242949054854925, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132859649726825876, guid: 6b63a9f1a49444098b1bc7c9c13ef194, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

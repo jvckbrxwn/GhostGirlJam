@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      image_2024-09-22_10-21-33-removebg-preview_0: 8469164349727144007
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
